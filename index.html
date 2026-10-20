@@ -10,7 +10,7 @@
 <!-- 네이버 서치어드바이저 / 구글 서치콘솔 인증 코드는 도메인 연결 후 교체 -->
 <meta name="naver-site-verification" content="NAVER_VERIFICATION_CODE">
 <meta name="google-site-verification" content="GOOGLE_VERIFICATION_CODE">
-<meta name="theme-color" content="#2F3A33">
+<meta name="theme-color" content="#000000">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="하우스틸츠 필라테스">
@@ -329,308 +329,331 @@
 }
 </script>
 <style>
-:root{--bg:#F6F3EE;--paper:#FFFDF9;--ink:#26302A;--sub:#5E6A62;--line:#E3DDD3;--accent:#2F3A33;--warm:#B8865B;--r:18px}
+:root{--k:#000;--d:#404040;--b:#66544E;--s:#BDBAB4;--l:#D9D9D9;--w:#FFFFFF;--p:#F6F5F3}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:"Pretendard Variable",Pretendard,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;word-break:keep-all;-webkit-font-smoothing:antialiased}
-a{color:inherit}img{max-width:100%}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-header.top{position:sticky;top:0;z-index:20;background:rgba(246,243,238,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
-.logo{font-weight:700;letter-spacing:.16em;font-size:15px;text-decoration:none}
-.logo img{display:block;height:29px;width:auto}
-nav.gnb a{font-size:14px;text-decoration:none;margin-left:20px;color:var(--sub)}nav.gnb a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:13px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
-.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
-.hero{padding:96px 0 72px}
-.eyebrow{font-size:13px;letter-spacing:.14em;color:var(--warm);font-weight:600;text-transform:uppercase}
-h1{font-size:clamp(30px,5.2vw,52px);line-height:1.3;margin:14px 0 20px;font-weight:700;letter-spacing:-.02em}
-.lead{font-size:clamp(16px,2vw,19px);color:var(--sub);max-width:640px}
-.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
-section{padding:72px 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(24px,3.4vw,34px);line-height:1.4;margin:0 0 12px;letter-spacing:-.015em}
-.sec-lead{color:var(--sub);margin:0 0 36px;max-width:680px}
-.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin:0}
-.summary div{background:var(--paper);padding:20px 22px}
-.summary dt{font-size:12px;color:var(--warm);font-weight:700;letter-spacing:.06em;margin-bottom:6px}
-.summary dd{margin:0;font-size:15px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px}
-.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--sub);font-size:15px}
-.num{font-size:12px;font-weight:700;color:var(--warm);letter-spacing:.1em;display:block;margin-bottom:10px}
-.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:14px}
-.steps li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px 22px 22px 74px;position:relative}
-.steps li:before{content:counter(s,decimal-leading-zero);position:absolute;left:24px;top:22px;font-weight:700;color:var(--warm)}
-.steps strong{display:block;font-size:17px;margin-bottom:2px}.steps span{color:var(--sub);font-size:15px}
-.tag{display:inline-block;font-size:12px;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:0 6px 10px 0;color:var(--sub)}
-.faq-item{background:var(--paper);border:1px solid var(--line);border-radius:14px;margin-bottom:10px}
-.faq-item summary{cursor:pointer;list-style:none;padding:18px 52px 18px 22px;position:relative}
-.faq-item summary::-webkit-details-marker{display:none}
-.faq-item summary:after{content:"+";position:absolute;right:22px;top:14px;font-size:24px;color:var(--warm)}
-.faq-item[open] summary:after{content:"–"}
-.faq-item h3{margin:0;font-size:17px;line-height:1.5}
-.faq-a{padding:0 22px 20px;color:#3b463f;font-size:15.5px}.faq-a p{margin:0 0 10px}.faq-a ul{margin:4px 0 0;padding-left:18px}
-.kw{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px}.kw li{display:flex;justify-content:space-between;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:15px}.kw b{color:var(--warm)}
-.rv{margin:0}.rv p{color:var(--ink)!important;font-size:15.5px}.rv cite{display:block;margin-top:10px;font-style:normal;font-size:13px;color:var(--sub)}
-.loc{display:grid;grid-template-columns:1.1fr 1fr;gap:20px}
-@media(max-width:820px){.loc{grid-template-columns:1fr}nav.gnb{display:none}.hero{padding:64px 0 48px}}
-table.info{width:100%;border-collapse:collapse;font-size:15px}
-table.info th{text-align:left;width:92px;color:var(--warm);font-weight:600;vertical-align:top;padding:10px 0;border-bottom:1px solid var(--line)}
-table.info td{padding:10px 0;border-bottom:1px solid var(--line)}
-.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.links a{font-size:14px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;background:var(--paper)}
-.note{font-size:13px;color:var(--sub)}
-.todo{background:#FFF1C9;padding:0 4px;border-radius:4px}
-footer{padding:44px 0 90px;border-top:1px solid var(--line);font-size:13px;color:var(--sub)}
-.float{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+body{margin:0;background:var(--w);color:var(--d);font-family:"Apple SD Gothic Neo","AppleSDGothicNeo","Pretendard Variable",Pretendard,"Noto Sans KR",sans-serif;font-weight:400;line-height:1.85;letter-spacing:-.01em;word-break:keep-all;-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%;display:block}figure{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+.en{font-size:11px;letter-spacing:.22em;text-transform:lowercase;color:var(--b)}
+header.top{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:blur(8px)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;border-bottom:1px solid var(--k)}
+.logo img{height:30px;width:auto}
+nav.gnb a{font-size:13px;text-decoration:none;margin-left:26px;color:var(--d);letter-spacing:.02em}nav.gnb a:hover{color:var(--k)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;background:var(--k);color:var(--w);text-decoration:none;font-size:14px;letter-spacing:.02em;border:1px solid var(--k);transition:.2s}
+.btn:hover{background:var(--b);border-color:var(--b)}
+.btn.line{background:transparent;color:var(--k)}.btn.line:hover{background:var(--k);color:var(--w)}
+.btn:after{content:"→";font-size:13px}
+.ph{position:relative;overflow:hidden;background:var(--l)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.6'/></svg>")}
+figcaption{font-size:11px;letter-spacing:.18em;color:var(--s);margin-top:10px;text-transform:lowercase}
+/* hero */
+.hero{display:grid;grid-template-columns:5fr 7fr;gap:0 48px;padding:72px 0 110px;align-items:end;position:relative}
+.hero h1{font-size:clamp(34px,4.6vw,62px);line-height:1.28;font-weight:300;color:var(--k);letter-spacing:-.035em;margin:26px 0 30px}
+.hero h1 b{font-weight:600}
+.hero .lead{font-size:16px;color:var(--d);max-width:430px;margin:0 0 38px}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap}
+.hero-ph{position:relative}
+.hero-ph .main{aspect-ratio:5/4}
+.hero-ph .sub{position:absolute;width:30%;aspect-ratio:3/4;left:-16%;bottom:-70px;transform:rotate(-3.5deg);box-shadow:0 20px 40px rgba(0,0,0,.12);border:6px solid var(--w)}
+.hero-ph .tag{position:absolute;right:0;top:-34px;font-size:11px;letter-spacing:.2em;color:var(--s)}
+/* sections */
+section{padding:120px 0;position:relative}
+.sec-h{display:grid;grid-template-columns:3fr 9fr;gap:48px;margin-bottom:64px;padding-top:18px;border-top:1px solid var(--k)}
+.sec-h .no{font-size:12px;color:var(--k);letter-spacing:.1em}
+.sec-h h2{font-size:clamp(26px,3.2vw,40px);font-weight:300;line-height:1.4;margin:0 0 14px;color:var(--k);letter-spacing:-.03em}
+.sec-h h2 b{font-weight:600}
+.sec-h p{margin:0;color:var(--d);max-width:620px}
+/* about summary */
+.summary{display:grid;grid-template-columns:repeat(4,1fr);margin:0;border-top:1px solid var(--l)}
+.summary div{padding:26px 22px 26px 0;border-bottom:1px solid var(--l)}
+.summary div:not(:nth-child(4n)){border-right:1px solid var(--l);}
+.summary div:not(:nth-child(4n+1)){padding-left:22px}
+.summary dt{font-size:11px;color:var(--b);letter-spacing:.14em;margin-bottom:8px}
+.summary dd{margin:0;font-size:14.5px;color:var(--k);line-height:1.7}
+@media(max-width:900px){.summary{grid-template-columns:1fr 1fr}.summary div{border-right:0!important;padding-left:0!important}}
+/* concerns - staggered */
+.voices{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+.voice{grid-column:span 4;padding:26px 0;border-top:1px solid var(--l)}
+.voice:nth-child(2){margin-top:60px}.voice:nth-child(3){margin-top:20px}.voice:nth-child(4){grid-column:2/span 4;margin-top:-10px}.voice:nth-child(5){grid-column:7/span 5;margin-top:30px}
+.voice h3{font-size:19px;font-weight:500;color:var(--k);margin:0 0 8px;letter-spacing:-.02em}
+.voice p{margin:0;font-size:14.5px;color:var(--d)}
+/* difference */
+.diff{display:grid;grid-template-columns:5fr 7fr;gap:60px;align-items:start}
+.diff-ph{position:sticky;top:110px}
+.diff-ph .a{aspect-ratio:3/4;width:82%}
+.diff-ph .b{aspect-ratio:4/3;width:58%;margin:-90px 0 0 auto;border:6px solid var(--w);transform:rotate(2deg)}
+.diff ol{list-style:none;margin:0;padding:0;counter-reset:d}
+.diff li{counter-increment:d;display:grid;grid-template-columns:70px 1fr;padding:30px 0;border-top:1px solid var(--l)}
+.diff li:before{content:counter(d,decimal-leading-zero);font-size:12px;color:var(--b);letter-spacing:.1em;padding-top:5px}
+.diff h3{font-size:20px;font-weight:500;color:var(--k);margin:0 0 8px;letter-spacing:-.02em}
+.diff p{margin:0;font-size:15px}
+/* first visit - dark band */
+.dark{background:var(--k);color:var(--l)}
+.dark .sec-h{border-top-color:var(--d)}
+.dark .sec-h h2,.dark .sec-h .no{color:var(--w)}.dark .sec-h p{color:var(--s)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;padding:28px 26px 10px 0;border-top:1px solid var(--d);position:relative}
+.steps li:nth-child(even){margin-top:46px}
+.steps li:before{content:counter(s,decimal-leading-zero);display:block;font-size:44px;font-weight:200;color:var(--w);margin-bottom:18px;letter-spacing:-.02em}
+.steps .r{font-size:11px;letter-spacing:.16em;color:var(--s);display:block;margin-bottom:6px}
+.steps strong{display:block;color:var(--w);font-weight:500;font-size:17px;margin-bottom:6px}
+.steps span.t{font-size:14px;color:var(--s)}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+/* program */
+.prog{display:grid;grid-template-columns:repeat(12,1fr);gap:28px}
+.pcard{grid-column:span 4}
+.pcard:nth-child(2){margin-top:80px}.pcard:nth-child(3){margin-top:30px}
+.pcard .ph{aspect-ratio:4/5;margin-bottom:22px}
+.pcard .k{font-size:11px;letter-spacing:.18em;color:var(--b)}
+.pcard h3{font-size:22px;font-weight:500;color:var(--k);margin:6px 0 10px;letter-spacing:-.02em}
+.pcard p{margin:0;font-size:14.5px}
+/* gallery strip */
+.strip{display:grid;grid-template-columns:2fr 1.2fr 1.6fr;gap:16px;align-items:end;padding:0 0 30px}
+.strip .ph:nth-child(1){aspect-ratio:16/10}.strip .ph:nth-child(2){aspect-ratio:3/4;transform:translateY(-40px)}.strip .ph:nth-child(3){aspect-ratio:16/11}
+/* reviews */
+.rv-wrap{display:grid;grid-template-columns:5fr 7fr;gap:60px}
+.kw{list-style:none;margin:0;padding:0}
+.kw li{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--l);font-size:15px;color:var(--k)}
+.kw b{font-weight:300;font-size:22px;color:var(--b);letter-spacing:-.02em}
+.quotes blockquote{margin:0 0 34px;padding:0 0 30px;border-bottom:1px solid var(--l)}
+.quotes blockquote:nth-child(2){margin-left:60px}
+.quotes p{font-size:18px;line-height:1.8;color:var(--k);font-weight:300;margin:0 0 12px;letter-spacing:-.02em}
+.quotes cite{font-style:normal;font-size:11px;letter-spacing:.14em;color:var(--s)}
+/* faq */
+.qa{border-top:1px solid var(--l)}
+.qa:last-of-type{border-bottom:1px solid var(--l)}
+.qa summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:70px 1fr 30px;align-items:center;padding:24px 0}
+.qa summary::-webkit-details-marker{display:none}
+.qa .qn{font-size:12px;color:var(--b);letter-spacing:.1em}
+.qa h3{margin:0;font-size:17px;font-weight:500;color:var(--k);letter-spacing:-.02em;line-height:1.55}
+.qa i{width:14px;height:14px;position:relative;justify-self:end}
+.qa i:before,.qa i:after{content:"";position:absolute;left:0;top:6px;width:14px;height:1px;background:var(--k);transition:.2s}
+.qa i:after{transform:rotate(90deg)}.qa[open] i:after{transform:rotate(0)}
+.qa-a{padding:0 30px 28px 70px;font-size:15px}.qa-a p{margin:0 0 10px}.qa-a ul{margin:4px 0 0;padding-left:18px}
+.note{font-size:12px;color:var(--s);line-height:1.8}
+.note a{color:var(--s)}
+/* location */
+.loc{display:grid;grid-template-columns:6fr 6fr;gap:48px}
+table.info{width:100%;border-collapse:collapse;font-size:14.5px}
+table.info th{text-align:left;width:90px;color:var(--b);font-weight:400;font-size:12px;letter-spacing:.1em;vertical-align:top;padding:16px 0;border-top:1px solid var(--l)}
+table.info td{padding:14px 0;border-top:1px solid var(--l);color:var(--k)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.links a{font-size:13px;padding:9px 16px;border:1px solid var(--k);text-decoration:none;color:var(--k)}
+.links a:hover{background:var(--k);color:var(--w)}
+.map{min-height:380px;filter:grayscale(1) contrast(.95)}
+.map iframe{border:0;width:100%;height:100%;min-height:380px}
+/* contact */
+.contact{text-align:left;display:grid;grid-template-columns:7fr 5fr;gap:48px;align-items:end}
+.contact h2{font-size:clamp(28px,3.6vw,46px);font-weight:300;color:var(--k);line-height:1.35;margin:0;letter-spacing:-.035em}
+/* footer */
+footer{background:var(--k);color:var(--s);padding:70px 0 100px;font-size:13px}
+footer .logo-w{height:30px;filter:invert(1) brightness(1.6);margin-bottom:26px}
+footer .links a{border-color:var(--d);color:var(--l)}footer .links a:hover{background:var(--w);color:var(--k)}
+.float{position:fixed;right:18px;bottom:18px;z-index:40}
+@media(max-width:900px){
+ nav.gnb{display:none}.wrap{padding:0 20px}
+ .hero,.diff,.rv-wrap,.loc,.contact,.sec-h{grid-template-columns:1fr}
+ .hero{padding:40px 0 100px}.hero-ph{order:-1;margin-bottom:30px}.hero-ph .sub{left:auto;right:-6px;bottom:-60px;width:34%}
+ .voice,.pcard,.voice:nth-child(n),.pcard:nth-child(n){grid-column:1/-1;margin-top:0}
+ .diff-ph{position:static}.strip{grid-template-columns:1fr 1fr}.strip .ph:nth-child(3){display:none}
+ section{padding:84px 0}.sec-h{gap:8px;margin-bottom:40px}.quotes blockquote:nth-child(2){margin-left:0}
+ .qa summary{grid-template-columns:44px 1fr 24px}.qa-a{padding-left:44px;padding-right:0}
+}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="logo" href="#top" aria-label="하우스틸츠 필라테스 홈"><img src="images/logo.png" alt="haus tiiilts 하우스틸츠 필라테스" width="124" height="29"></a>
-  <nav class="gnb" aria-label="주요 메뉴"><a href="#about">한눈에 보기</a><a href="#difference">다른 점</a><a href="#first">첫 방문</a><a href="#program">수업</a><a href="#reviews">후기</a><a href="#faq">자주 묻는 질문</a><a href="#location">오시는 길</a></nav>
+  <a class="logo" href="#top" aria-label="하우스틸츠 필라테스 홈"><img src="images/logo.png" alt="haus tiiilts 하우스틸츠 필라테스" width="130" height="30"></a>
+  <nav class="gnb" aria-label="주요 메뉴"><a href="#about">about</a><a href="#difference">difference</a><a href="#first">first visit</a><a href="#program">class</a><a href="#reviews">review</a><a href="#faq">faq</a><a href="#location">location</a></nav>
 </div></header>
-
 <main id="top">
-<section class="hero" style="border-top:0"><div class="wrap">
-  <p class="eyebrow">Seongsu · Ttukseom Pilates Studio</p>
-  <h1>몸은 제대로 보고,<br>운동하는 시간은 기분 좋게.</h1>
-  <p class="lead">하우스틸츠 필라테스는 뚝섬역에서 걸어서 3분, 성수동의 1:1·2:1 전문 필라테스 스튜디오예요. 첫 방문 때 운동부터 시키지 않아요. 자세와 움직임을 먼저 보고, 나에게 필요한 수업을 함께 찾습니다.</p>
-  <div class="cta"><a class="btn" href="https://booking.naver.com/booking/6/bizes/914731" target="_blank" rel="noopener">1:1 무료 체험수업 예약</a><a class="btn ghost" href="https://talk.naver.com/ct/w41r2f" target="_blank" rel="noopener">네이버 톡톡 문의</a></div>
-</div></section>
-
+<div class="wrap">
+<section class="hero">
+  <div>
+    <p class="en">seongsu · ttukseom pilates studio</p>
+    <h1>몸은 <b>제대로</b> 보고,<br>운동하는 시간은<br>기분 좋게.</h1>
+    <p class="lead">하우스틸츠 필라테스는 뚝섬역에서 걸어서 3분, 성수동의 1:1·2:1 전문 필라테스 스튜디오예요. 첫 방문 때 운동부터 시키지 않아요. 자세와 움직임을 먼저 보고, 나에게 필요한 수업을 함께 찾습니다.</p>
+    <div class="cta"><a class="btn" href="https://booking.naver.com/booking/6/bizes/914731" target="_blank" rel="noopener">1:1 무료 체험 예약</a><a class="btn line" href="https://talk.naver.com/ct/w41r2f" target="_blank" rel="noopener">네이버 톡톡 문의</a></div>
+  </div>
+  <div class="hero-ph">
+    <span class="tag">movement, not a program</span>
+    <figure class="ph main"><img src="images/move.jpg" alt="하우스틸츠 캐딜락 위에서 사이드 플랭크 동작을 하는 모습" loading="lazy"></figure>
+    <figure class="ph sub"><img src="images/reformer.jpg" alt="하우스틸츠 리포머 기구 디테일" loading="lazy"></figure>
+  </div>
+</section>
+</div>
 <section id="about"><div class="wrap">
-  <h2>하우스틸츠 한눈에 보기</h2>
-  <p class="sec-lead">처음 찾아보시는 분들이 가장 많이 물어보시는 정보예요.</p>
+  <div class="sec-h"><span class="no">01 — about</span><div><h2>하우스틸츠 <b>한눈에 보기</b></h2><p>처음 찾아보시는 분들이 가장 많이 물어보시는 정보예요.</p></div></div>
   <dl class="summary">
-    <div><dt>어떤 곳</dt><dd>성수동 1:1·2:1 전문 필라테스 스튜디오 (주식회사 하우스틸츠)</dd></div>
+    <div><dt>어떤 곳</dt><dd>성수동 1:1·2:1 전문 필라테스 스튜디오<br>(주식회사 하우스틸츠)</dd></div>
     <div><dt>위치</dt><dd>서울 성동구 상원4길 6 정수빌딩 7층<br>뚝섬역 4번 출구 도보 3분</dd></div>
-    <div><dt>수업</dt><dd>1:1 개인레슨 · 2:1 듀엣레슨 · 산전산후 필라테스<br><span class="note">그룹레슨은 운영하지 않아요</span></dd></div>
-    <div><dt>첫 방문</dt><dd>무료 2회: 1:1 체형 컨설팅 + 1:1 체험레슨</dd></div>
-    <div><dt>강사진</dt><dd>전원 7년차 이상, STOTT 국제자격 메인, 누적 10,000회 이상 레슨</dd></div>
-    <div><dt>운영시간</dt><dd>월~금 08:00~22:00 · 토 08:00~14:00 · 일요일 정기휴무</dd></div>
+    <div><dt>수업</dt><dd>1:1 개인 · 2:1 듀엣 · 산전산후<br>그룹레슨은 운영하지 않아요</dd></div>
+    <div><dt>첫 방문</dt><dd>무료 2회<br>1:1 체형 컨설팅 + 1:1 체험레슨</dd></div>
+    <div><dt>강사진</dt><dd>전원 7년차 이상, STOTT 국제자격 메인<br>누적 10,000회 이상 레슨</dd></div>
+    <div><dt>운영시간</dt><dd>월~금 08:00~22:00 · 토 08:00~14:00<br>일요일 정기휴무</dd></div>
     <div><dt>전화</dt><dd><a href="tel:050714230567">0507-1423-0567</a></dd></div>
-    <div><dt>주차</dt><dd>건물 기계식 주차 (소형·중형 승용차)</dd></div>
     <div><dt>리뷰</dt><dd>네이버 방문자 리뷰 371건 · 블로그 리뷰 144건<br><span class="note">2026년 10월 기준</span></dd></div>
   </dl>
 </div></section>
-
-<section id="concerns"><div class="wrap">
-  <h2>이런 분들이 많이 오세요</h2>
-  <p class="sec-lead">성수동 하우스틸츠에는 30대, 40대 직장인 분들이 많으세요. 같은 불편함이어도 이유는 사람마다 다 다르거든요.</p>
-  <div class="grid">
-    <div class="card"><h3>“목이랑 어깨가 늘 뻐근해요”</h3><p>퇴근할 때쯤이면 어깨가 굳어 있고, 스트레칭을 해도 그때뿐이에요.</p></div>
-    <div class="card"><h3>“오래 앉아 있으면 허리가 아파요”</h3><p>앉아 있다 일어날 때마다 허리가 뻣뻣하게 굳는 느낌이 들어요.</p></div>
-    <div class="card"><h3>“사진 보면 어깨 높이가 달라요”</h3><p>다리를 자주 꼬고, 한쪽으로만 가방을 메는 습관이 신경 쓰여요.</p></div>
-    <div class="card"><h3>“운동이 처음이라 망설여져요”</h3><p>몸이 뻣뻣한데 따라갈 수 있을지 걱정돼요.</p></div>
-    <div class="card"><h3>“임신 중·출산 후 몸이 걱정돼요”</h3><p>시기에 맞게 안전하게 움직이고 싶어요.</p></div>
+<section id="concerns" style="padding-top:20px"><div class="wrap">
+  <div class="sec-h"><span class="no">02 — who</span><div><h2>이런 분들이 <b>많이 오세요</b></h2><p>성수동 하우스틸츠에는 30대, 40대 직장인 분들이 많으세요. 같은 불편함이어도 이유는 사람마다 다 다르거든요.</p></div></div>
+  <div class="voices">
+    <div class="voice"><h3>“목이랑 어깨가 늘 뻐근해요”</h3><p>퇴근할 때쯤이면 어깨가 굳어 있고, 스트레칭을 해도 그때뿐이에요.</p></div>
+    <div class="voice"><h3>“오래 앉아 있으면 허리가 아파요”</h3><p>앉아 있다 일어날 때마다 허리가 뻣뻣하게 굳는 느낌이 들어요.</p></div>
+    <div class="voice"><h3>“사진 보면 어깨 높이가 달라요”</h3><p>다리를 자주 꼬고, 한쪽으로만 가방을 메는 습관이 신경 쓰여요.</p></div>
+    <div class="voice"><h3>“운동이 처음이라 망설여져요”</h3><p>몸이 뻣뻣한데 따라갈 수 있을지 걱정돼요.</p></div>
+    <div class="voice"><h3>“임신 중·출산 후 몸이 걱정돼요”</h3><p>시기에 맞게 안전하게 움직이고 싶어요.</p></div>
   </div>
 </div></section>
-
 <section id="difference"><div class="wrap">
-  <h2>하우스틸츠가 다른 점</h2>
-  <p class="sec-lead">수업 프로그램이 아니라, 그 사람을 봅니다.</p>
-  <div class="grid">
-    <div class="card"><span class="num">01</span><h3>운동보다 몸을 먼저 봐요</h3><p>서 있는 자세, 고개 돌리기, 팔 올리기, 몸 숙이기를 먼저 살펴보고 평소 생활까지 들은 뒤 수업을 설계해요.</p></div>
-    <div class="card"><span class="num">02</span><h3>경험이 쌓인 강사진</h3><p>강사진 전원 7년차 이상, STOTT(스탓) 필라테스 국제자격을 메인으로 이수했고 누적 10,000회 이상 레슨을 해왔어요.</p></div>
-    <div class="card"><span class="num">03</span><h3>팀 전체가 함께 케어해요</h3><p>담당 강사와 원장이 회원님 한 분 한 분의 몸 상태와 수업 방향을 함께 보고, 매월 내부 스터디에서 실제 수업을 이야기해요.</p></div>
-    <div class="card"><span class="num">04</span><h3>처음과 비교해요</h3><p>처음 기록한 자세와 움직임을 다시 확인하고 기록해서, 변화를 눈으로 확인할 수 있어요.</p></div>
-    <div class="card"><span class="num">05</span><h3>40평 공간에 한 팀만</h3><p>좋은 음악과 은은한 향, 정돈된 공간에서 옆 사람 신경 쓰지 않고 오롯이 내 몸에 집중하는 50분이에요.</p></div>
-    <div class="card"><span class="num">06</span><h3>수업 밖 일상으로 이어지게</h3><p>운동 효과는 수업 밖에서도 이어져야 진짜 내 것이 된다고 생각해요. 스스로 알아차리는 법을 함께 연습해요.</p></div>
+  <div class="sec-h"><span class="no">03 — difference</span><div><h2>수업 프로그램이 아니라,<br><b>그 사람을 봅니다</b></h2></div></div>
+  <div class="diff">
+    <div class="diff-ph"><figure class="ph a"><img src="images/space-table.jpg" alt="하우스틸츠 상담 테이블과 스튜디오 공간" loading="lazy"></figure><figure class="ph b"><img src="images/barrel.jpg" alt="래더 바렐과 스튜디오 기구" loading="lazy"></figure></div>
+    <ol>
+      <li><div><h3>운동보다 몸을 먼저 봐요</h3><p>서 있는 자세, 고개 돌리기, 팔 올리기, 몸 숙이기를 먼저 살펴보고 평소 생활까지 들은 뒤 수업을 설계해요.</p></div></li>
+      <li><div><h3>경험이 쌓인 강사진</h3><p>강사진 전원 7년차 이상, STOTT(스탓) 필라테스 국제자격을 메인으로 이수했고 누적 10,000회 이상 레슨을 해왔어요.</p></div></li>
+      <li><div><h3>팀 전체가 함께 케어해요</h3><p>담당 강사와 원장이 회원님 한 분 한 분의 몸 상태와 수업 방향을 함께 보고, 매월 내부 스터디에서 실제 수업을 이야기해요.</p></div></li>
+      <li><div><h3>처음과 비교해요</h3><p>처음 기록한 자세와 움직임을 다시 확인하고 기록해서, 변화를 눈으로 확인할 수 있어요.</p></div></li>
+      <li><div><h3>40평 공간에 한 팀만</h3><p>좋은 음악과 은은한 향, 정돈된 공간에서 옆 사람 신경 쓰지 않고 오롯이 내 몸에 집중하는 50분이에요.</p></div></li>
+      <li><div><h3>수업 밖 일상으로 이어지게</h3><p>운동 효과는 수업 밖에서도 이어져야 진짜 내 것이 된다고 생각해요. 스스로 알아차리는 법을 함께 연습해요.</p></div></li>
+    </ol>
   </div>
 </div></section>
-
-<section id="first"><div class="wrap">
-  <h2>첫 방문은 이렇게 진행돼요</h2>
-  <p class="sec-lead">첫 방문은 무료 2회로 진행돼요. 등록 전에, 실제로 나를 맡을 담당 강사와 먼저 수업해 보실 수 있어요.</p>
+<section id="first" class="dark"><div class="wrap">
+  <div class="sec-h"><span class="no">04 — first visit</span><div><h2>첫 방문은 <b>이렇게 진행돼요</b></h2><p>첫 방문은 무료 2회로 진행돼요. 등록 전에, 실제로 나를 맡을 담당 강사와 먼저 수업해 보실 수 있어요.</p></div></div>
   <ol class="steps">
-    <li><strong>네이버 예약 또는 톡톡으로 신청</strong><span>원하는 시간에 1:1 체험수업을 예약해 주세요.</span></li>
-    <li><strong>1회차 · 1:1 체형 컨설팅: 왜 운동하려는지부터</strong><span>불편한 곳, 앉아 있는 시간, 퇴근 후 생활과 취미까지 이야기 나눠요. 필요한 경우에는 병원을 먼저 권하기도 해요.</span></li>
-    <li><strong>1회차 · 자세와 움직임 확인</strong><span>서 있는 자세와 움직임을 보고, 지금 몸에서 어디가 대신 일하고 있는지 찾아요.</span></li>
-    <li><strong>2회차 · 담당 강사와 1:1 체험레슨</strong><span>내 몸에 맞게 조절한 운동을 직접 해보고, 앞으로의 수업 방향을 안내받아요.</span></li>
+    <li><span class="r">booking</span><strong>네이버 예약 또는 톡톡으로 신청</strong><span class="t">원하는 시간에 1:1 체험을 예약해 주세요.</span></li>
+    <li><span class="r">1회차 · consulting</span><strong>왜 운동하려는지부터</strong><span class="t">불편한 곳, 앉아 있는 시간, 퇴근 후 생활과 취미까지 이야기 나눠요. 필요한 경우에는 병원을 먼저 권하기도 해요.</span></li>
+    <li><span class="r">1회차 · posture</span><strong>자세와 움직임 확인</strong><span class="t">서 있는 자세와 움직임을 보고, 지금 몸에서 어디가 대신 일하고 있는지 찾아요.</span></li>
+    <li><span class="r">2회차 · lesson</span><strong>담당 강사와 1:1 체험레슨</strong><span class="t">내 몸에 맞게 조절한 운동을 직접 해보고, 앞으로의 수업 방향을 안내받아요.</span></li>
   </ol>
 </div></section>
-
 <section id="program"><div class="wrap">
-  <h2>수업 안내</h2>
-  <p class="sec-lead">모든 레슨은 정형화된 프로그램이 아니라, 첫 방문에서 본 내 몸에서 시작해요.</p>
-  <div class="grid">
-    <div class="card"><span class="tag">1:1</span><h3>개인 필라테스</h3><p>강사 한 명이 한 분만 봐요. 통증이나 체형 고민이 뚜렷하거나, 내 몸을 처음부터 꼼꼼히 알고 싶은 분께 맞아요.</p></div>
-    <div class="card"><span class="tag">2:1</span><h3>듀엣 필라테스</h3><p>‘두 명이 함께하는 맞춤레슨’이에요. 같은 동작도 소도구·강도·범위를 각자에게 맞춰요. 함께할 분이 없으면 비슷한 조건의 회원님과 연결해 드려요.</p></div>
-    <div class="card"><span class="tag">산전·산후</span><h3>산전산후 필라테스</h3><p>산전 전문 자격을 갖춘 원장·강사가 임신 시기와 출산 후 회복 단계에 맞춰, 그날 컨디션을 확인하며 1:1로 진행해요.</p></div>
+  <div class="sec-h"><span class="no">05 — class</span><div><h2>수업 <b>안내</b></h2><p>모든 레슨은 정형화된 프로그램이 아니라, 첫 방문에서 본 내 몸에서 시작해요.</p></div></div>
+  <div class="prog">
+    <div class="pcard"><figure class="ph "><img src="images/reformer2.jpg" alt="리포머 기구" loading="lazy"></figure><span class="k">1:1 private</span><h3>개인 필라테스</h3><p>강사 한 명이 한 분만 봐요. 통증이나 체형 고민이 뚜렷하거나, 내 몸을 처음부터 꼼꼼히 알고 싶은 분께 맞아요.</p></div>
+    <div class="pcard"><figure class="ph "><img src="images/space-studio.jpg" alt="하우스틸츠 스튜디오 전경" loading="lazy"></figure><span class="k">2:1 duet</span><h3>듀엣 필라테스</h3><p>‘두 명이 함께하는 맞춤레슨’이에요. 같은 동작도 소도구·강도·범위를 각자에게 맞춰요. 함께할 분이 없으면 비슷한 조건의 회원님과 연결해 드려요.</p></div>
+    <div class="pcard"><figure class="ph "><img src="images/lounge.jpg" alt="하우스틸츠 라운지" loading="lazy"></figure><span class="k">pre · postnatal</span><h3>산전산후 필라테스</h3><p>산전 전문 자격을 갖춘 원장·강사가 임신 시기와 출산 후 회복 단계에 맞춰, 그날 컨디션을 확인하며 1:1로 진행해요.</p></div>
   </div>
 </div></section>
-
+<div class="wrap"><div class="strip"><figure class="ph "><img src="images/space-wide.jpg" alt="하우스틸츠 스튜디오 공간" loading="lazy"></figure><figure class="ph "><img src="images/logo-wall.jpg" alt="하우스틸츠 로고 월" loading="lazy"></figure><figure class="ph "><img src="images/space-door.jpg" alt="하우스틸츠 탈의 공간" loading="lazy"></figure></div><figcaption>40평, 한 팀만. — haus tiiilts seongsu</figcaption></div>
 <section id="reviews"><div class="wrap">
-  <h2>회원님들이 남겨주신 이야기</h2>
-  <p class="sec-lead">네이버 플레이스 방문자 리뷰에서 회원님들이 가장 많이 고른 키워드예요. (2026년 10월 기준, 261명 참여)</p>
-  <ul class="kw"><li><span>“자세를 꼼꼼히 봐주세요”</span><b>297명</b></li><li><span>“시설이 깔끔해요”</span><b>244명</b></li><li><span>“친절해요”</span><b>238명</b></li><li><span>“수업이 체계적이에요”</span><b>226명</b></li><li><span>“맞춤 케어를 잘해줘요”</span><b>223명</b></li><li><span>“선생님 실력이 좋아요”</span><b>190명</b></li><li><span>“상담이 자세해요”</span><b>173명</b></li></ul>
-  <div class="grid" style="margin-top:22px">
-    <blockquote class="card rv"><p>“직장생활하면서 오래 앉아 있다 보니 항상 허리와 골반이 아팠는데, 30회 수업을 받는 동안 앉는 자세도 달라졌는지 어느새 통증이 아예 없어졌어요.”</p><cite>네이버 방문자 리뷰 · 1:1 개인레슨</cite></blockquote>
-    <blockquote class="card rv"><p>“산전필라테스 20회 하고 나서 너무 좋아서 10회 더 추가했어요. 그날그날 컨디션 파악하신 후 맞춤수업 해주셔서 너무 좋아요.”</p><cite>네이버 방문자 리뷰 · 산전 필라테스</cite></blockquote>
-    <blockquote class="card rv"><p>“제가 어떤 자세로 앉아 있는지, 어떤 식으로 움직이는지 하나씩 알게 되더라구요. 수업 시간에만 신경 쓰고 끝나는 게 아니라는 점이 좋았어요.”</p><cite>네이버 방문자 리뷰 · 1:1 개인레슨</cite></blockquote>
+  <div class="sec-h"><span class="no">06 — review</span><div><h2>회원님들이 <b>남겨주신 이야기</b></h2><p>네이버 플레이스 방문자 리뷰에서 회원님들이 가장 많이 고른 키워드예요. (2026년 10월 기준, 261명 참여)</p></div></div>
+  <div class="rv-wrap">
+    <ul class="kw"><li><span>“자세를 꼼꼼히 봐주세요”</span><b>297</b></li><li><span>“시설이 깔끔해요”</span><b>244</b></li><li><span>“친절해요”</span><b>238</b></li><li><span>“수업이 체계적이에요”</span><b>226</b></li><li><span>“맞춤 케어를 잘해줘요”</span><b>223</b></li><li><span>“선생님 실력이 좋아요”</span><b>190</b></li><li><span>“상담이 자세해요”</span><b>173</b></li></ul>
+    <div class="quotes">
+      <blockquote><p>“직장생활하면서 오래 앉아 있다 보니 항상 허리와 골반이 아팠는데, 30회 수업을 받는 동안 앉는 자세도 달라졌는지 어느새 통증이 아예 없어졌어요.”</p><cite>네이버 방문자 리뷰 · 1:1 개인레슨</cite></blockquote>
+      <blockquote><p>“산전필라테스 20회 하고 나서 너무 좋아서 10회 더 추가했어요. 그날그날 컨디션 파악하신 후 맞춤수업 해주셔서 너무 좋아요.”</p><cite>네이버 방문자 리뷰 · 산전 필라테스</cite></blockquote>
+      <blockquote><p>“제가 어떤 자세로 앉아 있는지, 어떤 식으로 움직이는지 하나씩 알게 되더라구요. 수업 시간에만 신경 쓰고 끝나는 게 아니라는 점이 좋았어요.”</p><cite>네이버 방문자 리뷰 · 1:1 개인레슨</cite></blockquote>
+      <div class="links"><a href="https://m.place.naver.com/place/1323326195/review/visitor" target="_blank" rel="noopener">네이버 리뷰 전체 보기</a></div>
+    </div>
   </div>
-  <div class="links"><a href="https://m.place.naver.com/place/1323326195/review/visitor" target="_blank" rel="noopener">네이버 리뷰 전체 보기</a></div>
 </div></section>
-
 <section id="faq"><div class="wrap">
-  <h2>자주 묻는 질문</h2>
-  <p class="sec-lead">상담 때 가장 많이 받는 질문들을 원장이 직접 정리했어요.</p>
+  <div class="sec-h"><span class="no">07 — faq</span><div><h2>자주 묻는 <b>질문</b></h2><p>상담 때 가장 많이 받는 질문들을 원장이 직접 정리했어요.</p></div></div>
   
-      <details class="faq-item" open>
-        <summary><h3>성수동·뚝섬역에서 체형부터 봐주는 필라테스를 찾고 있어요. 하우스틸츠는 어떤 곳인가요?</h3></summary>
-        <div class="faq-a">
-          <p>하우스틸츠 필라테스 성수본점은 뚝섬역 4번 출구에서 걸어서 3분 거리(약 150m)에 있는 1:1·2:1 전문 필라테스 스튜디오예요. 성수역, 서울숲역에서도 편하게 오실 수 있어요.</p>
-          <p>같은 불편함이어도 이유는 사람마다 다르기 때문에, 정해진 프로그램을 그대로 따라 하는 수업을 하지 않아요. 첫 방문에서 자세와 움직임을 먼저 보고, 그 사람에게 필요한 1:1 수업을 설계합니다.</p>
-          <ul><li>강사진 전원 STOTT(스탓) 필라테스 국제자격 메인 이수, 누적 10,000회 이상 레슨</li><li>40평 공간에서 한 팀만 수업</li><li>담당 강사와 원장이 함께 회원님 수업 방향을 보고, 매월 내부 스터디에서 논의</li><li>처음 자세와 움직임을 기록해 두고 변화를 비교</li></ul>
-        </div>
+      <details class="qa" open>
+        <summary><span class="qn">01</span><h3>성수동·뚝섬역에서 체형부터 봐주는 필라테스를 찾고 있어요. 하우스틸츠는 어떤 곳인가요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>하우스틸츠 필라테스 성수본점은 뚝섬역 4번 출구에서 걸어서 3분 거리(약 150m)에 있는 1:1·2:1 전문 필라테스 스튜디오예요. 성수역, 서울숲역에서도 편하게 오실 수 있어요.</p><p>같은 불편함이어도 이유는 사람마다 다르기 때문에, 정해진 프로그램을 그대로 따라 하는 수업을 하지 않아요. 첫 방문에서 자세와 움직임을 먼저 보고, 그 사람에게 필요한 1:1 수업을 설계합니다.</p><ul><li>강사진 전원 STOTT(스탓) 필라테스 국제자격 메인 이수, 누적 10,000회 이상 레슨</li><li>40평 공간에서 한 팀만 수업</li><li>담당 강사와 원장이 함께 회원님 수업 방향을 보고, 매월 내부 스터디에서 논의</li><li>처음 자세와 움직임을 기록해 두고 변화를 비교</li></ul></div>
       </details>
-      <details class="faq-item" open>
-        <summary><h3>첫 방문은 어떻게 진행되나요? 바로 운동부터 하나요?</h3></summary>
-        <div class="faq-a">
-          <p>아니요, 첫 방문 때 운동부터 시키지 않아요. 첫 방문은 무료 2회(1:1 체형 컨설팅 + 1:1 체험레슨)로 진행돼요.</p>
-          <p>1회차 체형 컨설팅에서는 왜 운동을 하려는지, 평소 얼마나 앉아 있는지, 퇴근 후 생활과 취미는 어떤지 이야기를 나누고, 서 있는 자세와 고개 돌리기, 팔 올리기, 몸 숙이기 같은 움직임을 살펴봐요. 필요한 경우에는 병원을 먼저 권하기도 해요.</p>
-          <p>2회차에는 실제로 나를 맡게 될 담당 강사와 1:1 체험레슨을 받아보실 수 있어요. 네이버 예약이나 네이버 톡톡으로 신청하시면 돼요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">02</span><h3>첫 방문은 어떻게 진행되나요? 바로 운동부터 하나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>아니요, 첫 방문 때 운동부터 시키지 않아요. 첫 방문은 무료 2회(1:1 체형 컨설팅 + 1:1 체험레슨)로 진행돼요.</p><p>1회차 체형 컨설팅에서는 왜 운동을 하려는지, 평소 얼마나 앉아 있는지, 퇴근 후 생활과 취미는 어떤지 이야기를 나누고, 서 있는 자세와 고개 돌리기, 팔 올리기, 몸 숙이기 같은 움직임을 살펴봐요. 필요한 경우에는 병원을 먼저 권하기도 해요.</p><p>2회차에는 실제로 나를 맡게 될 담당 강사와 1:1 체험레슨을 받아보실 수 있어요. 네이버 예약이나 네이버 톡톡으로 신청하시면 돼요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>운동이 처음이고 몸이 많이 뻣뻣해요. 그래도 필라테스를 할 수 있나요?</h3></summary>
-        <div class="faq-a">
-          <p>네, 그 상태 그대로 오셔도 됩니다. 필라테스는 유연한 사람이 하는 운동도, 운동을 잘해야 시작할 수 있는 운동도 아니거든요.</p>
-          <p>다리가 얼마나 찢어지는지보다 지금 내 몸이 어떻게 움직이는지를 아는 게 더 중요해요. 기구의 스프링과 동작 범위를 키와 힘에 맞게 조절하기 때문에 처음인 분도 무리 없이 시작할 수 있어요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">03</span><h3>운동이 처음이고 몸이 많이 뻣뻣해요. 그래도 필라테스를 할 수 있나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>네, 그 상태 그대로 오셔도 됩니다. 필라테스는 유연한 사람이 하는 운동도, 운동을 잘해야 시작할 수 있는 운동도 아니거든요.</p><p>다리가 얼마나 찢어지는지보다 지금 내 몸이 어떻게 움직이는지를 아는 게 더 중요해요. 기구의 스프링과 동작 범위를 키와 힘에 맞게 조절하기 때문에 처음인 분도 무리 없이 시작할 수 있어요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>1:1 개인레슨과 2:1 듀엣레슨은 뭐가 다른가요?</h3></summary>
-        <div class="faq-a">
-          <p>개인레슨은 강사 한 명이 한 분만 보는 수업이에요. 통증이나 체형 고민이 뚜렷하거나, 내 몸을 처음부터 꼼꼼히 알고 싶은 분께 맞아요.</p>
-          <p>하우스틸츠의 듀엣레슨은 ‘두 명이 함께하는 맞춤레슨’이에요. 같은 동작을 하더라도 소도구, 강도, 동작 범위를 각자의 몸에 맞게 다르게 조절해요. 혼자 받는 수업은 부담스럽지만 그룹보다 내 몸에 맞춰 운동하고 싶다면 듀엣이 잘 맞을 수 있어요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">04</span><h3>1:1 개인레슨과 2:1 듀엣레슨은 뭐가 다른가요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>개인레슨은 강사 한 명이 한 분만 보는 수업이에요. 통증이나 체형 고민이 뚜렷하거나, 내 몸을 처음부터 꼼꼼히 알고 싶은 분께 맞아요.</p><p>하우스틸츠의 듀엣레슨은 ‘두 명이 함께하는 맞춤레슨’이에요. 같은 동작을 하더라도 소도구, 강도, 동작 범위를 각자의 몸에 맞게 다르게 조절해요. 혼자 받는 수업은 부담스럽지만 그룹보다 내 몸에 맞춰 운동하고 싶다면 듀엣이 잘 맞을 수 있어요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>함께 운동할 사람이 없어도 듀엣레슨을 할 수 있나요?</h3></summary>
-        <div class="faq-a">
-          <p>네. 원하시는 시간대와 운동 목적을 말씀해 주시면, 비슷한 조건으로 듀엣레슨을 원하는 분과 함께 운동할 수 있도록 연결해 드려요. 운동 파트너로 만나 친구가 된 회원님들도 있답니다 :)</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">05</span><h3>함께 운동할 사람이 없어도 듀엣레슨을 할 수 있나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>네. 원하시는 시간대와 운동 목적을 말씀해 주시면, 비슷한 조건으로 듀엣레슨을 원하는 분과 함께 운동할 수 있도록 연결해 드려요. 운동 파트너로 만나 친구가 된 회원님들도 있답니다 :)</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>그룹레슨도 있나요?</h3></summary>
-        <div class="faq-a">
-          <p>지금은 그룹레슨을 운영하지 않아요. 그룹레슨은 운동을 루틴으로 만들기에 좋았지만, 한 분 한 분에게 필요한 케어를 세밀하게 담기에는 한계가 있었거든요.</p>
-          <p>그래서 그룹레슨을 종료하고 1:1 개인레슨과 2:1 듀엣레슨으로 운영하고 있어요. 혼자는 부담스럽다면 듀엣레슨을 추천드려요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">06</span><h3>그룹레슨도 있나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>지금은 그룹레슨을 운영하지 않아요. 그룹레슨은 운동을 루틴으로 만들기에 좋았지만, 한 분 한 분에게 필요한 케어를 세밀하게 담기에는 한계가 있었거든요.</p><p>그래서 그룹레슨을 종료하고 1:1 개인레슨과 2:1 듀엣레슨으로 운영하고 있어요. 혼자는 부담스럽다면 듀엣레슨을 추천드려요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>목·어깨가 늘 뻐근하고 거북목이 신경 쓰여요. 필라테스가 도움이 되나요?</h3></summary>
-        <div class="faq-a">
-          <p>꾸준히 하면 달라질 수 있어요. 다만 목이 불편하다고 다 같은 운동을 하지는 않아요. 등이 굽어 있어서인지, 날개뼈를 잘 못 쓰고 있어서인지에 따라 필요한 운동이 다르거든요.</p>
-          <p>거북목이 있는 20~30대 성인이 10주 동안 필라테스를 했을 때 머리가 앞으로 나온 정도가 줄었다는 연구도 있어요(Lee 외, 2016). 하루 대부분을 보는 휴대폰과 모니터 높이도 함께 바꿔야 오래 유지돼요. 팔이 저리거나 손에 힘이 빠진다면 먼저 전문의 진료를 받아 주세요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">07</span><h3>목·어깨가 늘 뻐근하고 거북목이 신경 쓰여요. 필라테스가 도움이 되나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>꾸준히 하면 달라질 수 있어요. 다만 목이 불편하다고 다 같은 운동을 하지는 않아요. 등이 굽어 있어서인지, 날개뼈를 잘 못 쓰고 있어서인지에 따라 필요한 운동이 다르거든요.</p><p>거북목이 있는 20~30대 성인이 10주 동안 필라테스를 했을 때 머리가 앞으로 나온 정도가 줄었다는 연구도 있어요(Lee 외, 2016). 하루 대부분을 보는 휴대폰과 모니터 높이도 함께 바꿔야 오래 유지돼요. 팔이 저리거나 손에 힘이 빠진다면 먼저 전문의 진료를 받아 주세요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>오래 앉아 있으면 허리가 아파요. 허리 통증에도 필라테스를 해도 되나요?</h3></summary>
-        <div class="faq-a">
-          <p>원인을 알고 있는 만성 허리 통증이라면 도움이 될 수 있어요. 필라테스를 한 사람들이 아무것도 하지 않은 사람들보다 단기 통증과 생활 불편이 줄었다는 코크란 리뷰가 있어요(Yamato 외, 2015).</p>
-          <p>예를 들어 엉덩이가 제 역할을 못 하면 허리가 대신 버티고 있을 수 있어요. 그래서 ‘허리에 좋은 운동’보다 ‘내 몸에 필요한 운동’을 먼저 찾습니다. 필라테스는 의료 처치를 대신하지 않아요. 다리 저림이나 밤에 깰 만큼의 통증이 있다면 먼저 병원 진료를 받아 주세요. 상담에서 필요하다고 판단되면 병원을 먼저 권하기도 해요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">08</span><h3>오래 앉아 있으면 허리가 아파요. 허리 통증에도 필라테스를 해도 되나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>원인을 알고 있는 만성 허리 통증이라면 도움이 될 수 있어요. 필라테스를 한 사람들이 아무것도 하지 않은 사람들보다 단기 통증과 생활 불편이 줄었다는 코크란 리뷰가 있어요(Yamato 외, 2015).</p><p>예를 들어 엉덩이가 제 역할을 못 하면 허리가 대신 버티고 있을 수 있어요. 그래서 ‘허리에 좋은 운동’보다 ‘내 몸에 필요한 운동’을 먼저 찾습니다. 필라테스는 의료 처치를 대신하지 않아요. 다리 저림이나 밤에 깰 만큼의 통증이 있다면 먼저 병원 진료를 받아 주세요. 상담에서 필요하다고 판단되면 병원을 먼저 권하기도 해요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>임신 중이거나 출산 후에도 필라테스를 할 수 있나요?</h3></summary>
-        <div class="faq-a">
-          <p>네, 하우스틸츠는 산전·산후 필라테스를 운영하고 있어요. 담당 원장과 강사 모두 산전 필라테스 전문 자격을 갖추고 있어요.</p>
-          <p>임신 시기와 그날 컨디션에 따라 할 수 있는 동작과 강도가 크게 달라지기 때문에 1:1로 몸 상태를 확인하며 진행해요. 시작 전에 담당 의료진과 운동 가능 여부를 먼저 상의해 주세요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">09</span><h3>임신 중이거나 출산 후에도 필라테스를 할 수 있나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>네, 하우스틸츠는 산전·산후 필라테스를 운영하고 있어요. 담당 원장과 강사 모두 산전 필라테스 전문 자격을 갖추고 있어요.</p><p>임신 시기와 그날 컨디션에 따라 할 수 있는 동작과 강도가 크게 달라지기 때문에 1:1로 몸 상태를 확인하며 진행해요. 시작 전에 담당 의료진과 운동 가능 여부를 먼저 상의해 주세요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>필라테스 효과는 얼마나 다녀야 느낄 수 있나요?</h3></summary>
-        <div class="faq-a">
-          <p>사람마다 몸과 생활 습관이 달라서 기간을 딱 잘라 말씀드리긴 어려워요. 필라테스의 변화를 확인한 연구들은 대부분 주 2~3회, 8~12주 정도 진행됐어요.</p>
-          <p>하우스틸츠에서는 처음 찍어 둔 자세와 움직임을 주기적으로 다시 확인하고 기록해요. 그래서 ‘좋아진 것 같다’는 느낌이 아니라 처음과 비교해 눈으로 변화를 확인하실 수 있어요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">10</span><h3>필라테스 효과는 얼마나 다녀야 느낄 수 있나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>사람마다 몸과 생활 습관이 달라서 기간을 딱 잘라 말씀드리긴 어려워요. 필라테스의 변화를 확인한 연구들은 대부분 주 2~3회, 8~12주 정도 진행됐어요.</p><p>하우스틸츠에서는 처음 찍어 둔 자세와 움직임을 주기적으로 다시 확인하고 기록해요. 그래서 ‘좋아진 것 같다’는 느낌이 아니라 처음과 비교해 눈으로 변화를 확인하실 수 있어요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>하우스틸츠 강사님들은 경력이 어느 정도인가요?</h3></summary>
-        <div class="faq-a">
-          <p>하우스틸츠 강사진은 전원 7년차 이상이고, STOTT(스탓) 필라테스 해외 국제자격을 메인으로 이수했어요. 지금까지 누적 10,000회가 넘는 레슨을 직접 진행해 왔습니다.</p>
-          <p>담당 강사 혼자 보는 게 아니라 원장도 회원님 한 분 한 분의 몸 상태와 수업 방향을 함께 살펴보고, 매월 내부 스터디에서 실제 회원님 수업을 이야기해요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">11</span><h3>하우스틸츠 강사님들은 경력이 어느 정도인가요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>하우스틸츠 강사진은 전원 7년차 이상이고, STOTT(스탓) 필라테스 해외 국제자격을 메인으로 이수했어요. 지금까지 누적 10,000회가 넘는 레슨을 직접 진행해 왔습니다.</p><p>담당 강사 혼자 보는 게 아니라 원장도 회원님 한 분 한 분의 몸 상태와 수업 방향을 함께 살펴보고, 매월 내부 스터디에서 실제 회원님 수업을 이야기해요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>윗몸일으키기를 할 때 목이 먼저 아파요. 복근이 약해서 그런가요?</h3></summary>
-        <div class="faq-a">
-          <p>꼭 복근이 약해서만은 아니에요. 목을 먼저 밀어내면서 몸을 끌어올리는 경우가 생각보다 많은데, 이럴 땐 윗등이 둥글게 말리는 움직임부터 만들어야 해요.</p>
-          <p>목으로 끌어올리던 움직임을 바꾼 뒤 “예전에는 갈비뼈 아래에만 힘이 들어왔는데, 지금은 복부 전체가 연결되는 느낌이 들어요”라고 말씀해주신 회원님도 있어요. 얼마나 높이 올라가느냐보다 어떻게 올라가느냐가 더 중요해요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">12</span><h3>윗몸일으키기를 할 때 목이 먼저 아파요. 복근이 약해서 그런가요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>꼭 복근이 약해서만은 아니에요. 목을 먼저 밀어내면서 몸을 끌어올리는 경우가 생각보다 많은데, 이럴 땐 윗등이 둥글게 말리는 움직임부터 만들어야 해요.</p><p>목으로 끌어올리던 움직임을 바꾼 뒤 “예전에는 갈비뼈 아래에만 힘이 들어왔는데, 지금은 복부 전체가 연결되는 느낌이 들어요”라고 말씀해주신 회원님도 있어요. 얼마나 높이 올라가느냐보다 어떻게 올라가느냐가 더 중요해요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>스완 동작을 하면 어깨가 찝혀요. 그 동작은 피해야 하나요?</h3></summary>
-        <div class="faq-a">
-          <p>무조건 참고 계속하거나 그 동작을 피하는 것이 답은 아니에요. 왜 불편한지, 어떤 움직임이 필요한지 이해하는 것이 먼저예요.</p>
-          <p>스완은 가슴을 열고 등을 펴는 동작이라, 등이 충분히 펴지지 않으면 어깨가 대신 일하면서 찝히는 느낌이 들 수 있어요. 단순히 ‘어깨 문제’가 아니라 움직임을 사용하는 방식의 차이일 수 있어서, 하우스틸츠에서는 필요한 움직임을 하나씩 연습한 뒤 같은 동작을 다시 확인해요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">13</span><h3>스완 동작을 하면 어깨가 찝혀요. 그 동작은 피해야 하나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>무조건 참고 계속하거나 그 동작을 피하는 것이 답은 아니에요. 왜 불편한지, 어떤 움직임이 필요한지 이해하는 것이 먼저예요.</p><p>스완은 가슴을 열고 등을 펴는 동작이라, 등이 충분히 펴지지 않으면 어깨가 대신 일하면서 찝히는 느낌이 들 수 있어요. 단순히 ‘어깨 문제’가 아니라 움직임을 사용하는 방식의 차이일 수 있어서, 하우스틸츠에서는 필요한 움직임을 하나씩 연습한 뒤 같은 동작을 다시 확인해요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>하우스틸츠 실제 후기는 어떤가요?</h3></summary>
-        <div class="faq-a">
-          <p>2026년 10월 기준 네이버 플레이스 방문자 리뷰 371건, 블로그 리뷰 144건이 있어요. 회원님들이 가장 많이 고른 키워드는 “자세를 꼼꼼히 봐주세요”(297명), “시설이 깔끔해요”(244명), “친절해요”(238명), “수업이 체계적이에요”(226명), “맞춤 케어를 잘해줘요”(223명) 순이에요.</p>
-          <p>재등록 후기와 산전 필라테스 연장 후기도 많아요. 전체 후기는 네이버 플레이스에서 확인하실 수 있어요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">14</span><h3>하우스틸츠 실제 후기는 어떤가요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>2026년 10월 기준 네이버 플레이스 방문자 리뷰 371건, 블로그 리뷰 144건이 있어요. 회원님들이 가장 많이 고른 키워드는 “자세를 꼼꼼히 봐주세요”(297명), “시설이 깔끔해요”(244명), “친절해요”(238명), “수업이 체계적이에요”(226명), “맞춤 케어를 잘해줘요”(223명) 순이에요.</p><p>재등록 후기와 산전 필라테스 연장 후기도 많아요. 전체 후기는 네이버 플레이스에서 확인하실 수 있어요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>가격은 어떻게 되나요?</h3></summary>
-        <div class="faq-a">
-          <p>첫 방문 1:1 체험수업은 무료예요. 정규 수업 금액은 수업 형태(1:1·2:1)와 횟수에 따라 달라서, 상담 때 몸 상태와 목표를 들은 뒤 맞는 방식으로 안내해 드려요. 네이버 플레이스에서 현재 진행 중인 첫 등록 혜택도 확인하실 수 있어요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">15</span><h3>가격은 어떻게 되나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>첫 방문 1:1 체험수업은 무료예요. 정규 수업 금액은 수업 형태(1:1·2:1)와 횟수에 따라 달라서, 상담 때 몸 상태와 목표를 들은 뒤 맞는 방식으로 안내해 드려요. 네이버 플레이스에서 현재 진행 중인 첫 등록 혜택도 확인하실 수 있어요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>운영시간은 어떻게 되나요? 주말에도 수업하나요?</h3></summary>
-        <div class="faq-a">
-          <p>월요일부터 금요일까지 08:00~22:00, 토요일은 08:00~14:00에 운영하고 일요일은 정기휴무예요. 출근 전 아침이나 퇴근 후 저녁 시간에도 수업할 수 있어요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">16</span><h3>운영시간은 어떻게 되나요? 주말에도 수업하나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>월요일부터 금요일까지 08:00~22:00, 토요일은 08:00~14:00에 운영하고 일요일은 정기휴무예요. 출근 전 아침이나 퇴근 후 저녁 시간에도 수업할 수 있어요.</p></div>
       </details>
-      <details class="faq-item">
-        <summary><h3>주차할 수 있나요? 어떻게 찾아가나요?</h3></summary>
-        <div class="faq-a">
-          <p>뚝섬역 4번 출구로 나와 상원길 골목 메가커피 우측으로 50m 들어오면 정수빌딩이 있어요. 엘리베이터를 타고 7층으로 올라오시면 됩니다. 성수역 1번 출구에서는 600m 직진 후 안쪽 골목으로 200m 오시면 돼요.</p>
-          <p>건물 기계식 주차장은 소형·중형 승용차만 이용할 수 있어요. 그 외 차량은 성수1가2동 공영주차장이나 성수문화복지회관 주차장을 이용해 주세요.</p>
-        </div>
+      <details class="qa">
+        <summary><span class="qn">17</span><h3>주차할 수 있나요? 어떻게 찾아가나요?</h3><i aria-hidden="true"></i></summary>
+        <div class="qa-a"><p>뚝섬역 4번 출구로 나와 상원길 골목 메가커피 우측으로 50m 들어오면 정수빌딩이 있어요. 엘리베이터를 타고 7층으로 올라오시면 됩니다. 성수역 1번 출구에서는 600m 직진 후 안쪽 골목으로 200m 오시면 돼요.</p><p>건물 기계식 주차장은 소형·중형 승용차만 이용할 수 있어요. 그 외 차량은 성수1가2동 공영주차장이나 성수문화복지회관 주차장을 이용해 주세요.</p></div>
       </details>
-  <p class="note" style="margin-top:20px">필라테스는 의료 행위가 아니에요. 통증이 심하거나 진단이 필요한 경우에는 먼저 전문의와 상담해 주세요.<br>
-  참고한 연구: Yamato T.P. 외 (2015) Pilates for low back pain, Cochrane Database of Systematic Reviews, <a href="https://doi.org/10.1002/14651858.CD010265.pub2">doi.org/10.1002/14651858.CD010265.pub2</a> · Lee S.M. 외 (2016) Clinical effectiveness of a Pilates treatment for forward head posture, Journal of Physical Therapy Science, <a href="https://doi.org/10.1589/jpts.28.2009">doi.org/10.1589/jpts.28.2009</a></p>
+  <p class="note" style="margin-top:28px">필라테스는 의료 행위가 아니에요. 통증이 심하거나 진단이 필요한 경우에는 먼저 전문의와 상담해 주세요.<br>참고한 연구: Yamato T.P. 외 (2015) Pilates for low back pain, Cochrane Database of Systematic Reviews, <a href="https://doi.org/10.1002/14651858.CD010265.pub2">doi.org/10.1002/14651858.CD010265.pub2</a> · Lee S.M. 외 (2016) Clinical effectiveness of a Pilates treatment for forward head posture, Journal of Physical Therapy Science, <a href="https://doi.org/10.1589/jpts.28.2009">doi.org/10.1589/jpts.28.2009</a></p>
 </div></section>
-
 <section id="location"><div class="wrap">
-  <h2>오시는 길</h2>
-  <p class="sec-lead">뚝섬역에서 걸어서 3분, 성수역과 서울숲역에서도 편하게 오실 수 있어요 :)</p>
+  <div class="sec-h"><span class="no">08 — location</span><div><h2>오시는 <b>길</b></h2><p>뚝섬역에서 걸어서 3분, 성수역과 서울숲역에서도 편하게 오실 수 있어요 :)</p></div></div>
   <div class="loc">
-    <div class="card">
-      <h3>하우스틸츠 필라테스 성수본점</h3>
+    <div>
       <table class="info">
-        <tr><th>주소</th><td>서울특별시 성동구 상원4길 6 정수빌딩 7층</td></tr>
-        <tr><th>지하철</th><td>2호선 뚝섬역 4번 출구, 상원길 골목 메가커피 우측으로 50m<br>2호선 성수역 1번 출구, 600m 직진 후 안쪽 골목으로 200m</td></tr>
-        <tr><th>주차</th><td>건물 기계식 주차 (소형·중형 승용차만). 그 외 차량은 성수1가2동 공영주차장, 성수문화복지회관 주차장 이용</td></tr>
-        <tr><th>운영시간</th><td>월~금 08:00~22:00 · 토 08:00~14:00 · 일요일 정기휴무</td></tr>
-        <tr><th>전화</th><td><a href="tel:050714230567">0507-1423-0567</a></td></tr>
+        <tr><th>studio</th><td>하우스틸츠 필라테스 성수본점</td></tr>
+        <tr><th>address</th><td>서울특별시 성동구 상원4길 6 정수빌딩 7층</td></tr>
+        <tr><th>subway</th><td>2호선 뚝섬역 4번 출구, 상원길 골목 메가커피 우측으로 50m<br>2호선 성수역 1번 출구, 600m 직진 후 안쪽 골목으로 200m</td></tr>
+        <tr><th>parking</th><td>건물 기계식 주차 (소형·중형 승용차만). 그 외 차량은 성수1가2동 공영주차장, 성수문화복지회관 주차장 이용</td></tr>
+        <tr><th>hours</th><td>월~금 08:00~22:00 · 토 08:00~14:00 · 일요일 정기휴무</td></tr>
+        <tr><th>call</th><td><a href="tel:050714230567">0507-1423-0567</a></td></tr>
       </table>
       <div class="links"><a href="https://map.naver.com/p/entry/place/1323326195" target="_blank" rel="noopener">네이버 지도</a><a href="https://booking.naver.com/booking/6/bizes/914731" target="_blank" rel="noopener">네이버 예약</a><a href="https://talk.naver.com/ct/w41r2f" target="_blank" rel="noopener">네이버 톡톡</a><a href="https://pf.kakao.com/_xnnNpxj" target="_blank" rel="noopener">카카오톡 채널</a></div>
     </div>
-    <div class="card" style="padding:0;overflow:hidden;min-height:320px">
-      <iframe title="하우스틸츠 필라테스 위치 지도" src="https://www.openstreetmap.org/export/embed.html?bbox=127.0455%2C37.5452%2C127.0525%2C37.5493&amp;layer=mapnik&amp;marker=37.5472539%2C127.0490022" style="border:0;width:100%;height:100%;min-height:320px" loading="lazy"></iframe>
-    </div>
+    <div class="map"><iframe title="하우스틸츠 필라테스 위치 지도" src="https://www.openstreetmap.org/export/embed.html?bbox=127.0455%2C37.5452%2C127.0525%2C37.5493&amp;layer=mapnik&amp;marker=37.5472539%2C127.0490022" loading="lazy"></iframe></div>
   </div>
 </div></section>
-
-<section id="contact"><div class="wrap" style="text-align:center">
-  <h2>지금 내 몸에 무엇이 필요한지 궁금하다면</h2>
-  <p class="sec-lead" style="margin-left:auto;margin-right:auto">어디가 불편한지, 왜 그런지, 나에게 어떤 운동이 필요한지. 편하게 상담 신청해 주세요 :) 다정한 틸츠 팀이 맞이해 드릴게요.</p>
-  <div class="cta" style="justify-content:center"><a class="btn" href="https://booking.naver.com/booking/6/bizes/914731" target="_blank" rel="noopener">1:1 무료 체험수업 예약</a><a class="btn ghost" href="https://talk.naver.com/ct/w41r2f" target="_blank" rel="noopener">네이버 톡톡 문의</a></div>
+<section id="contact" style="padding-top:40px"><div class="wrap">
+  <div class="contact" style="border-top:1px solid var(--k);padding-top:40px">
+    <h2>지금 내 몸에 무엇이<br>필요한지 궁금하다면</h2>
+    <div><p style="margin:0 0 24px">어디가 불편한지, 왜 그런지, 나에게 어떤 운동이 필요한지. 편하게 상담 신청해 주세요 :) 다정한 틸츠 팀이 맞이해 드릴게요.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="https://booking.naver.com/booking/6/bizes/914731" target="_blank" rel="noopener">1:1 무료 체험 예약</a><a class="btn line" href="https://talk.naver.com/ct/w41r2f" target="_blank" rel="noopener">네이버 톡톡 문의</a></div></div>
+  </div>
 </div></section>
 </main>
-
 <footer><div class="wrap">
-  <img src="images/logo.png" alt="haus tiiilts" style="height:24px;width:auto;margin-bottom:14px;opacity:.85">
-  <p><strong>하우스틸츠 필라테스 성수본점</strong> · 주식회사 하우스틸츠 · 원장 장보령<br>서울특별시 성동구 상원4길 6 정수빌딩 7층 · 0507-1423-0567 · 사업자등록번호 <span class="todo">[입력 필요]</span></p>
-  <div class="links"><a href="https://blog.naver.com/haus_tiiilts" target="_blank" rel="noopener">네이버 블로그</a><a href="https://www.instagram.com/haus.tiiilts" target="_blank" rel="noopener">인스타그램</a><a href="https://www.youtube.com/@haus.tiiilts" target="_blank" rel="noopener">유튜브</a><a href="https://clip.naver.com/@haus_tiiilts" target="_blank" rel="noopener">네이버 클립</a><a href="https://m.place.naver.com/place/1323326195" target="_blank" rel="noopener">네이버 플레이스</a></div>
-  <p>최종 업데이트 <time datetime="2026-10-20">2026-10-20</time></p>
+  <img class="logo-w" src="images/logo.png" alt="haus tiiilts">
+  <p><span style="color:var(--w)">하우스틸츠 필라테스 성수본점</span> · 주식회사 하우스틸츠 · 원장 장보령 · 사업자등록번호 591-88-02593<br>서울특별시 성동구 상원4길 6 정수빌딩 7층 · 0507-1423-0567</p>
+  <div class="links"><a href="https://blog.naver.com/haus_tiiilts" target="_blank" rel="noopener">blog</a><a href="https://www.instagram.com/haus.tiiilts" target="_blank" rel="noopener">instagram</a><a href="https://www.youtube.com/@haus.tiiilts" target="_blank" rel="noopener">youtube</a><a href="https://clip.naver.com/@haus_tiiilts" target="_blank" rel="noopener">naver clip</a><a href="https://m.place.naver.com/place/1323326195" target="_blank" rel="noopener">naver place</a></div>
+  <p style="margin-top:30px">최종 업데이트 <time datetime="2026-10-20">2026-10-20</time></p>
 </div></footer>
-<a class="btn float" href="https://booking.naver.com/booking/6/bizes/914731" target="_blank" rel="noopener">체험수업 예약</a>
+<a class="btn float" href="https://booking.naver.com/booking/6/bizes/914731" target="_blank" rel="noopener">체험 예약</a>
 </body>
 </html>
